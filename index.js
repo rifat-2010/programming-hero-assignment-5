@@ -60,7 +60,7 @@ function getTitleAndNumber(id) {
 
   // inner HTML বসাও
   newCart.innerHTML = `
-    <div class="flex flex-row justify-between items-center bg-amber-50 p-3">
+    <div class="cart-items flex flex-row justify-between items-center bg-amber-50 p-3">
     <div class="flex flex-col gap-0.5">
     
       <h2 class="font-bold">${title}</h2>
@@ -105,3 +105,12 @@ getTitleAndNumber('card9');
 
 
 
+document.getElementById('btn-clear').addEventListener('click', function(){
+    const cartContainer = document.querySelectorAll('.cart-items');
+
+   cartContainer.forEach(item => {
+        item.remove();
+    });
+    document.getElementById('total').innerText = 0;
+    document.getElementById('number').innerText = 0;
+})
