@@ -26,7 +26,7 @@
                     <img src="assets/heart.png" alt="heart-image" class="heart-icon w-[30px] h-[30px]">
                 </div>
                 <div class="flex bg-[#41ff6b1a] gap-0.5 w-[123px] h-[52px] justify-center items-center rounded-[50px]">
-                    <span>100</span>
+                    <span id="coin">100</span>
                     <img src="assets/coin.png" alt="coin" class="w=[30px] h-[30px]">
                 </div>
                 
@@ -52,17 +52,17 @@
     <main class="flex gap-[30px]  items-stretch pt-[48px] bg-[#f5fff6]">
         <section id="main-section" class="grid grid-cols-3 gap-[30px] ">
             <!-- box container 01-->
-            <div class="p-32 flex flex-col gap-[25px] rounded-[12px] shadow-md bg-white p-[32px]">
+            <div id="card1" class="p-32 flex flex-col gap-[25px] rounded-[12px] shadow-md bg-white p-[32px]">
                 <div class="flex justify-between items-center">
                     <img src="assets/emergency.png" alt="emergency-image" class="w-[60px] h-[60px]">
                     <i class="heart-icon cursor-pointer fa-solid fa-heart"></i>
                 </div>
                 <div>
                 <h2 class="font-bold text-[24px] text-[#111111]">জাতীয় জরুরি সেবা</h2>
-                <h5 id="box1title" class="text-[#5C5C5C]">National Emergency</h5>
+                <h5 class="title text-[#5C5C5C]">National Emergency</h5>
                 </div>
                 <div>
-                <h1 class="font-bold text-[32px]">999</h1>
+                <h1 class="number font-bold text-[32px]">999</h1>
                 <button class="text-[#5C5C5C] text-[18px] cursor-pointer w-[103px] h-[32px] bg-[#f2f2f2] rounded-xl">
                 সার্বজনীন
                     </button>
@@ -77,17 +77,17 @@
                     </div>
             </div>
             <!-- box container 02-->
-            <div class="p-32 flex flex-col gap-[25px] rounded-[12px] shadow-md bg-white p-[32px]">  
+            <div id="card2" class="p-32 flex flex-col gap-[25px] rounded-[12px] shadow-md bg-white p-[32px]">  
                 <div class="flex justify-between items-center">
                     <img src="assets/police.png" alt="police" class="w-[60px] h-[60px]">
                     <i class="heart-icon cursor-pointer fa-solid fa-heart"></i>
                 </div>
                 <div>
                 <h2 class="font-bold text-[24px] text-[#111111]">পুলিশ</h2>
-                <h5 class="text-[#5C5C5C]">Police</h5>
+                <h5 class="title text-[#5C5C5C]">Police</h5>
                 </div>
                 <div>
-                <h1 class="font-bold text-[32px]">999</h1>
+                <h1 class="number font-bold text-[32px]">999</h1>
                
                 <button class="text-[#5C5C5C] text-[18px] cursor-pointer w-[103px] h-[32px] bg-[#f2f2f2] rounded-xl">পুলিশ</button>
                    
@@ -100,7 +100,7 @@
                     </div>
             </div>
             <!-- box container 03-->
-            <div class="p-32 flex flex-col gap-[25px] rounded-[12px] shadow-md bg-white p-[32px]">
+            <div id="card3" class="p-32 flex flex-col gap-[25px] rounded-[12px] shadow-md bg-white p-[32px]">
                 <div class="flex justify-between items-center">
                     <img src="assets/fire-service.png" alt="fire-service" class="w-[60px] h-[60px]">
                     <i class="heart-icon cursor-pointer fa-solid fa-heart"></i>
@@ -119,11 +119,11 @@
                         <button class="coppy-btn text-[#5C5C5C] text-[18px] w-[182px] h-[40px]  rounded-xl border cursor-pointer"><i class="fa-solid fa-copy"></i>Coppy</button>
                    
                         
-                <button class="call-btn text-white text-[18px]  w-[182px] h-[40px]  rounded-xl bg-[#00A63E] border cursor-pointer"><i class="fa-solid fa-phone"></i>Call</button>
+                <button onclick="getTitleAndNumber('card3')" class="call-btn text-white text-[18px]  w-[182px] h-[40px]  rounded-xl bg-[#00A63E] border cursor-pointer"><i class="fa-solid fa-phone"></i>Call</button>
                     </div>
             </div>
             <!-- box container 04-->
-            <div class="p-32 flex flex-col gap-[25px] rounded-[12px] shadow-md bg-white p-[32px]"> 
+            <div id="card4" class="p-32 flex flex-col gap-[25px] rounded-[12px] shadow-md bg-white p-[32px]"> 
                 <div class="flex justify-between items-center">
                     <img src="assets/ambulance.png" alt="ambulance" class="w-[60px] h-[60px]">
                     <i class="heart-icon cursor-pointer fa-solid fa-heart"></i>
@@ -146,7 +146,7 @@
                     </div>
             </div>
             <!-- box container 05-->
-            <div class="p-32 flex flex-col gap-[25px] rounded-[12px] shadow-md bg-white p-[32px]">
+            <div id="card5" class="p-32 flex flex-col gap-[25px] rounded-[12px] shadow-md bg-white p-[32px]">
                 <div class="flex justify-between items-center">
                     <img src="assets/emergency.png" alt="emergency-image" class="w-[60px] h-[60px]">
                     <i class="heart-icon cursor-pointer fa-solid fa-heart"></i>
@@ -169,7 +169,7 @@
                     </div>
             </div>
             <!-- box container 06-->
-            <div class="p-32 flex flex-col gap-[25px] rounded-[12px] shadow-md bg-white p-[32px]">
+            <div id="card6" class="p-32 flex flex-col gap-[25px] rounded-[12px] shadow-md bg-white p-[32px]">
                 <div class="flex justify-between items-center">
                     <img src="assets/emergency.png" alt="emergency-image" class="w-[60px] h-[60px]">
                     <i class="heart-icon cursor-pointer fa-solid fa-heart"></i>
@@ -192,7 +192,7 @@
                     </div>
             </div>
             <!-- box container 07-->
-            <div class="p-32 flex flex-col gap-[25px] rounded-[12px] shadow-md bg-white p-[32px]">
+            <div id="card7" class="p-32 flex flex-col gap-[25px] rounded-[12px] shadow-md bg-white p-[32px]">
                 <div class="flex justify-between items-center">
                     <img src="assets/emergency.png" alt="emergency-image" class="w-[60px] h-[60px]">
                     <i class="heart-icon cursor-pointer fa-solid fa-heart"></i>
@@ -215,7 +215,7 @@
                     </div>
             </div>
             <!-- box container 08-->
-            <div class="p-32 flex flex-col gap-[25px] rounded-[12px] shadow-md bg-white p-[32px]"> 
+            <div id="card8" class="p-32 flex flex-col gap-[25px] rounded-[12px] shadow-md bg-white p-[32px]"> 
                 <div class="flex justify-between items-center">
                     <img src="assets/emergency.png" alt="emergency-image" class="w-[60px] h-[60px]">
                     <i class="heart-icon cursor-pointer fa-solid fa-heart"></i>
@@ -238,7 +238,7 @@
                     </div>
             </div>
             <!-- box container 09-->
-            <div class="p-32 flex flex-col gap-[25px] rounded-[12px] shadow-md bg-white p-[32px]">
+            <div id="card9" class="p-32 flex flex-col gap-[25px] rounded-[12px] shadow-md bg-white p-[32px]">
                 <div class="flex justify-between items-center">
                     <img src="assets/emergency.png" alt="emergency-image" class="w-[60px] h-[60px]">
                     <i class="heart-icon cursor-pointer fa-solid fa-heart"></i>
@@ -262,7 +262,7 @@
             </div>
         </section>
        
-        <section class=" w-[400px] p-32 flex flex-col gap-[25px] rounded-[12px] shadow-md bg-white p-[32px]">
+        <section id="newcarSection" class=" w-[400px] p-32 flex flex-col gap-[25px] rounded-[12px] shadow-md bg-white p-[32px]">
             <div class="flex justify-between">
                 <div class="flex items-center gap-[8px]">
                     <i class="fa-solid fa-clock"></i>
@@ -276,5 +276,8 @@
         </section>
         
             </main>
+
+
+                    
             <script src="index.js"></script>
 </html>
