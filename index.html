@@ -13,14 +13,14 @@
 <body>
     <!-- navber and header main section -->
     <header>
-        <nav class="flex justify-between">
-            <div class="flex gap-0.5">
+        <nav class="flex justify-between md:justify-between gap-2 flex-col md:flex-row justify-center items-center">
+            <div class="flex gap-1 md:gap-0.5">
                 <img src="assets/logo-dark.png" alt="logo-dark" class="w-[60px] h-[6    0px]">
                 
                        <h2 class="text-[#006747] font-bold text-2xl">Emergency <br>Service</h2>       
                 
             </div>
-            <div class="flex">
+            <div class="flex gap-2 md:gap-0 mb-2.5 md:mb-0">
                 <div class="flex bg-[#41ff6b1a] gap-0.5 w-[123px] h-[52px] justify-center items-center rounded-[50px]">
                     <span id="heart-icon-main">0</span>
                     <img src="assets/heart.png" alt="heart-image" class="heart-icon w-[30px] h-[30px]">
@@ -38,19 +38,19 @@
             </div>
         </nav>
 
-    <section class="bg-gradient-to-r from-[rgba(1,49,35,1)] via-[rgba(0,103,71,1)] to-[rgba(1,50,35,1)] flex flex-col justify-center items-center gap-[10px] p-5">
+    <section class="bg-gradient-to-r from-[rgba(1,49,35,1)] via-[rgba(0,103,71,1)] to-[rgba(1,50,35,1)] flex flex-col justify-center items-center gap-[10px] p-5 ">
    <!-- Content here -->
 </div>
 
         <img src="assets/logo-dark.png" alt="logo-dark" class="w-[92px] h-[92px]">
-        <h1 class="font-bold text-[40px] text-white">জরুরি সেবা ডিরেক্টরি</h1>
-        <p class="font-[20px] font-semibold text-white">Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh</p>
+        <h1 class="font-bold text-[40px] text-white text-center">জরুরি সেবা ডিরেক্টরি</h1>
+        <p class="font-[20px] font-semibold text-white text-center">Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh</p>
     </section>
     </header>
 
     <!-- main section -->
-    <main class="flex gap-[30px]  items-stretch pt-[48px] bg-[#f5fff6]">
-        <section id="main-section" class="grid grid-cols-3 gap-[30px] ">
+    <main class="flex flex-col-reverse md:flex-row gap-[30px]  items-stretch pt-[48px] bg-[#f5fff6] px-5">
+        <section id="main-section" class="grid grid-cols-1 md:grid-cols-3 gap-[30px] ">
             <!-- box container 01-->
             <div id="card1" class="p-32 flex flex-col gap-[25px] rounded-[12px] shadow-md bg-white p-[32px]">
                 <div class="flex justify-between items-center">
@@ -69,10 +69,10 @@
                     </div>
                     <div class="flex gap-[8px]">
                          
-                <button class="coppy-btn text-[#5C5C5C] text-[18px] w-[182px] h-[40px]  rounded-xl border cursor-pointer"><i class="fa-solid fa-copy"></i>Coppy</button>
+                <button onclick="getCoppyBtn('card2')" class="coppy-btn text-[#5C5C5C] text-[18px] w-[182px] h-[40px]  rounded-xl border cursor-pointer"><i class="fa-solid fa-copy"></i>Coppy</button>
                    
                         
-                <button  class="call-btn text-white text-[18px]  w-[182px] h-[40px]  rounded-xl bg-[#00A63E] border cursor-pointer"><i class="fa-solid fa-phone"></i>Call</button>
+                <button  onclick="getTitleAndNumber('card1')" class="call-btn text-white text-[18px]  w-[182px] h-[40px]  rounded-xl bg-[#00A63E] border cursor-pointer"><i class="fa-solid fa-phone"></i>Call</button>
                    
                     </div>
             </div>
@@ -93,14 +93,14 @@
                    
                     </div>
                     <div class="flex gap-[8px]">
-                        <button class="coppy-btn text-[#5C5C5C] text-[18px] w-[182px] h-[40px]  rounded-xl border cursor-pointer"><i class="fa-solid fa-copy"></i>Coppy</button>
+                        <button onclick="getCoppyBtn('card2')" class="coppy-btn text-[#5C5C5C] text-[18px] w-[182px] h-[40px]  rounded-xl border cursor-pointer"><i class="fa-solid fa-copy"></i>Coppy</button>
                    
                         
-                <button class="call-btn text-white text-[18px]  w-[182px] h-[40px]  rounded-xl bg-[#00A63E] border cursor-pointer"><i class="fa-solid fa-phone"></i>Call</button>
+                <button  onclick="getTitleAndNumber('card2')" class="call-btn text-white text-[18px]  w-[182px] h-[40px]  rounded-xl bg-[#00A63E] border cursor-pointer"><i class="fa-solid fa-phone"></i>Call</button>
                     </div>
             </div>
             <!-- box container 03-->
-            <div id="card3" class="p-32 flex flex-col gap-[25px] rounded-[12px] shadow-md bg-white p-[32px]">
+            <div id="card3" class=" p-32 flex flex-col gap-[25px] rounded-[12px] shadow-md bg-white p-[32px]">
                 <div class="flex justify-between items-center">
                     <img src="assets/fire-service.png" alt="fire-service" class="w-[60px] h-[60px]">
                     <i class="heart-icon cursor-pointer fa-solid fa-heart"></i>
@@ -116,7 +116,7 @@
                    
                     </div>
                     <div class="flex gap-[8px]">
-                        <button class="coppy-btn text-[#5C5C5C] text-[18px] w-[182px] h-[40px]  rounded-xl border cursor-pointer"><i class="fa-solid fa-copy"></i>Coppy</button>
+                        <button onclick="getCoppyBtn('card3')" class="coppy-btn text-[#5C5C5C] text-[18px] w-[182px] h-[40px]  rounded-xl border cursor-pointer"><i class="fa-solid fa-copy"></i>Coppy</button>
                    
                         
                 <button onclick="getTitleAndNumber('card3')" class="call-btn text-white text-[18px]  w-[182px] h-[40px]  rounded-xl bg-[#00A63E] border cursor-pointer"><i class="fa-solid fa-phone"></i>Call</button>
@@ -139,10 +139,10 @@
                   
                     </div>
                     <div class="flex gap-[8px]">
-                        <button class="coppy-btn text-[#5C5C5C] text-[18px] w-[182px] h-[40px]  rounded-xl border cursor-pointer"><i class="fa-solid fa-copy"></i>Coppy</button>
+                        <button onclick="getCoppyBtn('card2')" class="coppy-btn text-[#5C5C5C] text-[18px] w-[182px] h-[40px]  rounded-xl border cursor-pointer"><i class="f a-solid fa-copy"></i>Coppy</button>
                    
                         
-                <button class="call-btn text-white text-[18px]  w-[182px] h-[40px]  rounded-xl bg-[#00A63E] border cursor-pointer"><i class="fa-solid fa-phone"></i>Call</button>
+                <button  onclick="getTitleAndNumber('card4')" class="call-btn text-white text-[18px]  w-[182px] h-[40px]  rounded-xl bg-[#00A63E] border cursor-pointer"><i class="fa-solid fa-phone"></i>Call</button>
                     </div>
             </div>
             <!-- box container 05-->
@@ -162,10 +162,10 @@
                    
                     </div>
                     <div class="flex gap-[8px]">
-                        <button class="coppy-btn text-[#5C5C5C] text-[18px] w-[182px] h-[40px]  rounded-xl border cursor-pointer"><i class="fa-solid fa-copy"></i>Coppy</button>
+                        <button onclick="getCoppyBtn('card2')" class="coppy-btn text-[#5C5C5C] text-[18px] w-[182px] h-[40px]  rounded-xl border cursor-pointer"><i class="fa-solid fa-copy"></i>Coppy</button>
                    
                         
-                <button class="call-btn text-white text-[18px]  w-[182px] h-[40px]  rounded-xl bg-[#00A63E] border cursor-pointer"><i class="fa-solid fa-phone"></i>Call</button>
+                <button  onclick="getTitleAndNumber('card5')" class="call-btn text-white text-[18px]  w-[182px] h-[40px]  rounded-xl bg-[#00A63E] border cursor-pointer"><i class="fa-solid fa-phone"></i>Call</button>
                     </div>
             </div>
             <!-- box container 06-->
@@ -185,10 +185,10 @@
                
                     </div>
                     <div class="flex gap-[8px]">
-                        <button class="coppy-btn text-[#5C5C5C] text-[18px] w-[182px] h-[40px]  rounded-xl border cursor-pointer"><i class="fa-solid fa-copy"></i>Coppy</button>
+                        <button onclick="getCoppyBtn('card2')" class="coppy-btn text-[#5C5C5C] text-[18px] w-[182px] h-[40px]  rounded-xl border cursor-pointer"><i class="fa-solid fa-copy"></i>Coppy</button>
                    
                         
-                <button class="call-btn text-white text-[18px]  w-[182px] h-[40px]  rounded-xl bg-[#00A63E] border cursor-pointer"><i class="fa-solid fa-phone"></i>Call</button>
+                <button  onclick="getTitleAndNumber('card6')" class="call-btn text-white text-[18px]  w-[182px] h-[40px]  rounded-xl bg-[#00A63E] border cursor-pointer"><i class="fa-solid fa-phone"></i>Call</button>
                     </div>
             </div>
             <!-- box container 07-->
@@ -208,10 +208,10 @@
                     
                     </div>
                     <div class="flex gap-[8px]">
-                         <button class="coppy-btn text-[#5C5C5C] text-[18px] w-[182px] h-[40px]  rounded-xl border cursor-pointer"><i class="fa-solid fa-copy"></i>Coppy</button>
+                         <button onclick="getCoppyBtn('card2')" class="coppy-btn text-[#5C5C5C] text-[18px] w-[182px] h-[40px]  rounded-xl border cursor-pointer"><i class="fa-solid fa-copy"></i>Coppy</button>
                    
                         
-                <button class="call-btn text-white text-[18px]  w-[182px] h-[40px]  rounded-xl bg-[#00A63E] border cursor-pointer"><i class="fa-solid fa-phone"></i>Call</button>
+                <button  onclick="getTitleAndNumber('card7')" class="call-btn text-white text-[18px]  w-[182px] h-[40px]  rounded-xl bg-[#00A63E] border cursor-pointer"><i class="fa-solid fa-phone"></i>Call</button>
                     </div>
             </div>
             <!-- box container 08-->
@@ -231,10 +231,10 @@
              
                     </div>
                     <div class="flex gap-[8px]">
-                         <button class="coppy-btn text-[#5C5C5C] text-[18px] w-[182px] h-[40px]  rounded-xl border cursor-pointer"><i class="fa-solid fa-copy"></i>Coppy</button>
+                         <button onclick="getCoppyBtn('card2')" class="coppy-btn text-[#5C5C5C] text-[18px] w-[182px] h-[40px]  rounded-xl border cursor-pointer"><i class="fa-solid fa-copy"></i>Coppy</button>
                    
                         
-                <button class="call-btn text-white text-[18px]  w-[182px] h-[40px]  rounded-xl bg-[#00A63E] border cursor-pointer"><i class="fa-solid fa-phone"></i>Call</button>
+                <button  onclick="getTitleAndNumber('card8')" class="call-btn text-white text-[18px]  w-[182px] h-[40px]  rounded-xl bg-[#00A63E] border cursor-pointer"><i class="fa-solid fa-phone"></i>Call</button>
                     </div>
             </div>
             <!-- box container 09-->
@@ -254,25 +254,27 @@
                     
                     </div>
                     <div class="flex gap-[8px]">
-                        <button class=" coppy-btn text-[#5C5C5C] text-[18px] w-[182px] h-[40px]  rounded-xl border cursor-pointer"><i class="fa-solid fa-copy"></i>Coppy</button>
+                        <button onclick="getCoppyBtn('card2')" class=" coppy-btn text-[#5C5C5C] text-[18px] w-[182px] h-[40px]  rounded-xl border cursor-pointer"><i class="fa-solid fa-copy"></i>Coppy</button>
                    
                         
-                <button class="call-btn text-white text-[18px]  w-[182px] h-[40px]  rounded-xl bg-[#00A63E] border cursor-pointer"><i class="fa-solid fa-phone"></i>Call</button>
+                <button  onclick="getTitleAndNumber('card10')" class="call-btn text-white text-[18px]  w-[182px] h-[40px]  rounded-xl bg-[#00A63E] border cursor-pointer"><i class="fa-solid fa-phone"></i>Call</button>
                     </div>
             </div>
         </section>
        
-        <section id="newcarSection" class=" w-[400px] p-32 flex flex-col gap-[25px] rounded-[12px] shadow-md bg-white p-[32px]">
+        <section class=" w-[400px] p-32 flex flex-col gap-[25px] rounded-[12px] shadow-md bg-white p-[32px]">
             <div class="flex justify-between">
                 <div class="flex items-center gap-[8px]">
                     <i class="fa-solid fa-clock"></i>
                     <h2 class="font-semibold  text-[20px]">Call History</h2>
                 </div>
- 
+
                     <button id="btn-clear" class="text-white font-semibold text-[18px] bg-[#00A63E] w-[114px] h-[52px] rounded-[50px] cursor-pointer">Clear</button>
           
             </div>
+<div id="newcarSection" class="flex flex-col gap-3">
 
+</div>
         </section>
         
             </main>
