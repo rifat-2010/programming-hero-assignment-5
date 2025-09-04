@@ -1,3 +1,6 @@
+# programming-hero-assignment-5 > Questions & Answers ---->
+
+
 <!-- question 01 -->
 1. What is the difference between getElementById, getElementsByClassName, and querySelector / querySelectorAll?
 
@@ -10,12 +13,15 @@ querySelector : It finds the first HTML element that matches a specified CSS sel
 
 
 
+
 <!-- question 02 -->
 
 2. How do you create and insert a new element into the DOM?
 
 Answer : 
 To create and add a new HTML element using JavaScript, we first use the createElement() function. This function helps us make a new tag that we want to add to our project. Then, to place this new element somewhere in the HTML document, we use the appendChild() function. We put the new element inside the appendChild() function to attach it to an existing parent element.
+
+
 
 
 <!-- question 03 -->
@@ -26,11 +32,15 @@ Answer :
 I already know what an event is, and that is what happens when we click on an underlined text or a button, etc. And event bubbling is a process where the event starts from the child element (like a button) and gradually spreads to the parent elements.
 
 
+
+
 <!-- question 04 -->
 4. What is Event Delegation in JavaScript? Why is it useful?
 
 Answer : 
 Event delegation is a technique in JavaScript where we add an event listener to a parent element, and it handles events on all its child elements. It takes advantage of event bubbling. For example, when a child element (such as a button) is clicked, the event is passed up to the parent, and we can work with that event from there.
+
+
 
 
 <!-- question 05 -->
