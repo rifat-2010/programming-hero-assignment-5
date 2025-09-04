@@ -36,10 +36,13 @@ console.log(event)
 } 
 
 function getCoppyBtn(id) {
-  card = document.getElementById(id);
-  const title = "নম্বর কপি হয়েছে :";
-  const price = card.querySelector("h1").innerText;
 
+  const card = document.getElementById(id);
+   
+  const title = "নম্বর কপি হয়েছে :";
+  console.log(id)
+  const price = card.querySelector("h1").innerText;
+console.log(price);
   const total = title + " " + price;
 
   // coppy btn real coppy js code
@@ -53,40 +56,6 @@ function getCoppyBtn(id) {
     });
     return;
 }
-
-
-
-
-document.querySelectorAll('.call-btn').addEventListener('click', function(){
-document.getElementById("card1").addEventListener("click", function () {
-  getCoppyBtn("card1");
-});
-document.getElementById("card2").addEventListener("click", function () {
-  getCoppyBtn("card2");
-});
-document.getElementById("card3").addEventListener("click", function () {
-  getCoppyBtn("card3");
-});
-document.getElementById("card4").addEventListener("click", function () {
-  getCoppyBtn("card4");
-});
-document.getElementById("card5").addEventListener("click", function () {
-  getCoppyBtn("card5");
-});
-document.getElementById("card6").addEventListener("click", function () {
-  getCoppyBtn("card6");
-});
-document.getElementById("card7").addEventListener("click", function () {
-  getCoppyBtn("card7");
-});
-document.getElementById("card8").addEventListener("click", function () {
-  getCoppyBtn("card8");
-});
-document.getElementById("card9").addEventListener("click", function () {
-  getCoppyBtn("card9");
-});
-
-})
 
 
 
@@ -147,35 +116,3 @@ document.getElementById("btn-clear").addEventListener("click", function () {
 
   return;
 }
-
-
-document.querySelectorAll('.call-btn').addEventListener('click', function(){
-document.getElementById("card1").addEventListener("click", function () {
-  getTitleAndNumber("card1");
-});
-document.getElementById("card2").addEventListener("click", function () {
-  getTitleAndNumber("card2");
-});
-document.getElementById("card3").addEventListener("click", function () {
-  getTitleAndNumber("card3");
-});
-document.getElementById("card4").addEventListener("click", function () {
-  getTitleAndNumber("card4");
-});
-document.getElementById("card5").addEventListener("click", function () {
-  getTitleAndNumber("card5");
-});
-document.getElementById("card6").addEventListener("click", function () {
-  getTitleAndNumber("card6");
-});
-document.getElementById("card7").addEventListener("click", function () {
-  getTitleAndNumber("card7");
-});
-document.getElementById("card8").addEventListener("click", function () {
-  getTitleAndNumber("card8");
-});
-document.getElementById("card9").addEventListener("click", function () {
-  getTitleAndNumber("card9");
-});
-
-})

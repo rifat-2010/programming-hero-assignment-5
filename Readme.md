@@ -7,7 +7,7 @@ Here are the differences between these three functions:
 getElementById : It finds an HTML element by its unique ID.
 getElementsByClassName : It finds all HTML elements that have a specific class name.
 querySelector : It finds the first HTML element that matches a specified CSS selector.
-querySelector : It finds the first HTML element that matches a specified CSS selector.
+
 
 
 <!-- question 02 -->
